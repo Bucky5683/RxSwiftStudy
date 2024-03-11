@@ -30,9 +30,6 @@
                             <constraint firstItem="vCF-5u-pmf" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="pk7-6L-XnC"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <outlet property="logLabel" destination="vCF-5u-pmf" id="JI4-JG-ybv"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
