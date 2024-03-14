@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="994-WL-0PA">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
@@ -17,27 +17,27 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="0an-FO-z23">
-                                <rect key="frame" x="0.0" y="103" width="393" height="645"/>
+                                <rect key="frame" x="0.0" y="113" width="393" height="635"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TableItemViewCell" id="RDP-N0-bYJ" customClass="TableItemViewCell" customModule="RxSwiftStudy" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="50" width="393" height="41.666667938232422"/>
+                                        <rect key="frame" x="0.0" y="50" width="393" height="41"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="RDP-N0-bYJ" id="1Ux-ZR-rLK">
-                                            <rect key="frame" x="0.0" y="0.0" width="393" height="41.666667938232422"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="41"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3B9-fm-phI">
-                                                    <rect key="frame" x="0.0" y="0.0" width="393" height="41.666666666666664"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="393" height="41"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VQV-ez-F3V">
-                                                            <rect key="frame" x="321.66666666666669" y="10.000000000000002" width="41.333333333333314" height="21.666666666666671"/>
+                                                            <rect key="frame" x="321.66666666666669" y="10" width="41.333333333333314" height="21"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nej-0u-mIL">
-                                                            <rect key="frame" x="30.000000000000004" y="10.000000000000002" width="41.333333333333343" height="21.666666666666671"/>
+                                                            <rect key="frame" x="30.000000000000004" y="10" width="41.333333333333343" height="21"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -100,7 +100,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="0an-FO-z23" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="8CI-SK-JN4"/>
+                            <constraint firstItem="0an-FO-z23" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="8CI-SK-JN4"/>
                             <constraint firstItem="3Lz-a8-lWQ" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="F54-OB-eTF"/>
                             <constraint firstItem="3Lz-a8-lWQ" firstAttribute="top" secondItem="0an-FO-z23" secondAttribute="bottom" id="Gtm-Lj-MoQ"/>
                             <constraint firstItem="0an-FO-z23" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="M30-jJ-epb"/>
@@ -109,7 +109,7 @@
                             <constraint firstItem="3Lz-a8-lWQ" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="rmX-25-onS"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="가계부" largeTitleDisplayMode="always" id="5Zq-7p-gp8"/>
+                    <navigationItem key="navigationItem" title="가계부" id="5Zq-7p-gp8"/>
                     <connections>
                         <outlet property="tableView" destination="0an-FO-z23" id="E9G-C2-N6y"/>
                         <outlet property="totalPriceLabel" destination="JsH-KS-KB3" id="t5y-d0-kAO"/>

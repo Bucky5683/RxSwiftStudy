@@ -26,6 +26,7 @@ class MainViewController: UIViewController, UITableViewDelegate {
     }
     private func addEditButtonToNavigationItem() {
         navigationItem.rightBarButtonItem = editButtonItem
+        editButtonItem.title = "+"
     }
     private func setupTableViewDelegate() {
         self.tableView.rx.setDelegate(self).disposed(by: disposeBag)
