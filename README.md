@@ -10,3 +10,7 @@ https://brook-gander-784.notion.site/RxSwift-62bcedc75d1142a0b4d5b8d694bfb715
 
 ### 원본 블로그 링크
 https://magi82.github.io/ios-rxswift-01/?source=post_page-----4b5187d07a33--------------------------------
+
+
+## 추가: RxSwift를 활용한 간단한 가계부앱
+RxSwift, RxCocoa, tableView를 활용해 가계부앱을 만들어보자
