@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EB18CC3A2BA825E10033E436 /* TableItemPlussViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB18CC392BA825E10033E436 /* TableItemPlussViewCell.swift */; };
 		EB3285622BA197FD00BF55FF /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3285612BA197FD00BF55FF /* MainViewController.swift */; };
 		EB3285652BA1982700BF55FF /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3285642BA1982700BF55FF /* MainViewModel.swift */; };
 		EB3285682BA1983700BF55FF /* MainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3285672BA1983700BF55FF /* MainModel.swift */; };
@@ -44,6 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EB18CC392BA825E10033E436 /* TableItemPlussViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableItemPlussViewCell.swift; sourceTree = "<group>"; };
 		EB3285612BA197FD00BF55FF /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		EB3285642BA1982700BF55FF /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		EB3285672BA1983700BF55FF /* MainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainModel.swift; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				EB77F4322B9E831F002F1C04 /* Main.storyboard */,
+				EB18CC392BA825E10033E436 /* TableItemPlussViewCell.swift */,
 				EB3285612BA197FD00BF55FF /* MainViewController.swift */,
 				EB3285692BA1A10900BF55FF /* TableItemViewCell.swift */,
 			);
@@ -312,6 +315,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB18CC3A2BA825E10033E436 /* TableItemPlussViewCell.swift in Sources */,
 				EB3285652BA1982700BF55FF /* MainViewModel.swift in Sources */,
 				EB32856A2BA1A10900BF55FF /* TableItemViewCell.swift in Sources */,
 				EB77F4312B9E831F002F1C04 /* ViewController.swift in Sources */,

@@ -32,6 +32,12 @@ class MainViewModel {
         self.tableObservable.onNext(dataes)
     }
     
+    func addItem(name: String, price: Int) {
+        var currentData = try! self.tableObservable.value()
+        currentData.append(TableDataModel(name: name, price: price))
+        self.tableObservable.onNext(currentData)
+    }
+    
     func clearAllItemSelections() {
         self.tableObservable
             .map { dataes in
