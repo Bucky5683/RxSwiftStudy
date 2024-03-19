@@ -13,6 +13,8 @@ class TableItemViewCell: UITableViewCell {
     @IBOutlet weak var title: UILabel!
     @IBOutlet weak var price: UILabel!
     
+    var category: String = ""
+    
     var onDeleteButtonTapped: (() -> Void)?
     var disposeBag = DisposeBag()
     

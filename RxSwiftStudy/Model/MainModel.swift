@@ -11,6 +11,7 @@ import RxDataSources
 struct TableDataModel {
     var name : String
     var price : Int
+    var category : String
 }
 
 extension TableDataModel: IdentifiableType, Equatable {
