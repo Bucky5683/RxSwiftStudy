@@ -61,14 +61,10 @@ class MainViewController: UIViewController, UITableViewDelegate {
             })
             .disposed(by: disposeBag)
         
-        self.tableView.rx.itemSelected
-            .subscribe(onNext: { [weak self] indexPath in
-                guard let cell = self?.tableView.cellForRow(at: indexPath) as? TableItemViewCell else {
-                    return
-                }
-                
-                
-                self?.presentVC(name: cell.title.text ?? "", price: Int(cell.price.text ?? "0") ?? 0, category: cell.category.text ?? "")
+        self.tableView.rx.modelSelected(TableDataModel.self)
+            .subscribe(onNext: { [weak self] element in
+                print("SELECETED ELEMENT : \(element.name) \(element.price) \(element.category)")
+                self?.presentVC(name: element.name, price: element.price, category: element.category)
             })
             .disposed(by: disposeBag)
         

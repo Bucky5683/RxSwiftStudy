@@ -12,16 +12,18 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var category: UILabel!
     @IBOutlet weak var price: UILabel!
     
+    @IBOutlet weak var backView: UIView!
     var nameText: String = ""
     var categoryText: String = ""
     var priceText: Int = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.configUI()
         // Do any additional setup after loading the view.
     }
     private func configUI() {
+        self.backView.frame.size.height = 500
         self.name.text = self.nameText
         self.category.text = self.categoryText
         self.price.text = "\(self.priceText)"
