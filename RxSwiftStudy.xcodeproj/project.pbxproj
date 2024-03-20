@@ -25,6 +25,7 @@
 		EB77F4502B9E8320002F1C04 /* RxSwiftStudyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB77F44F2B9E8320002F1C04 /* RxSwiftStudyUITestsLaunchTests.swift */; };
 		EB77F45E2B9E8CDC002F1C04 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = EB77F45D2B9E8CDC002F1C04 /* RxCocoa */; };
 		EB77F4602B9E8CDC002F1C04 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = EB77F45F2B9E8CDC002F1C04 /* RxSwift */; };
+		EBCB51D12BA977FB00766BD1 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCB51D02BA977FB00766BD1 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		EB77F4492B9E8320002F1C04 /* RxSwiftStudyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RxSwiftStudyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB77F44D2B9E8320002F1C04 /* RxSwiftStudyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxSwiftStudyUITests.swift; sourceTree = "<group>"; };
 		EB77F44F2B9E8320002F1C04 /* RxSwiftStudyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxSwiftStudyUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		EBCB51D02BA977FB00766BD1 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 				EB18CC392BA825E10033E436 /* TableItemPlussViewCell.swift */,
 				EB3285612BA197FD00BF55FF /* MainViewController.swift */,
 				EB3285692BA1A10900BF55FF /* TableItemViewCell.swift */,
+				EBCB51D02BA977FB00766BD1 /* DetailViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -315,6 +318,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBCB51D12BA977FB00766BD1 /* DetailViewController.swift in Sources */,
 				EB18CC3A2BA825E10033E436 /* TableItemPlussViewCell.swift in Sources */,
 				EB3285652BA1982700BF55FF /* MainViewModel.swift in Sources */,
 				EB32856A2BA1A10900BF55FF /* TableItemViewCell.swift in Sources */,

@@ -3,6 +3,7 @@
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -129,20 +130,65 @@
             </objects>
             <point key="canvasLocation" x="973.28244274809151" y="-2.1126760563380285"/>
         </scene>
-        <!--View Controller-->
+        <!--DetailViewController-->
         <scene sceneID="5qt-l8-WSG">
             <objects>
-                <viewController id="6Ot-t5-h4v" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DetailViewController" title="DetailViewController" interactionActivityTrackingBaseName="DetailViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="6Ot-t5-h4v" customClass="DetailViewController" customModule="RxSwiftStudy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gmn-sK-8p8">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="500"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="메뉴 이름" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="06L-NH-ccF">
+                                <rect key="frame" x="96.666666666666686" y="159" width="200" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="cv8-FH-IVA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qf2-cf-GZR">
+                                <rect key="frame" x="162" y="276" width="69" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="200" id="hv0-WB-y8w"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="카테고리" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ji1-9R-yRO">
+                                <rect key="frame" x="167" y="225" width="59" height="21"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="100" id="ZFG-PI-dJU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Dc4-Ex-LeQ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="06L-NH-ccF" firstAttribute="top" secondItem="Dc4-Ex-LeQ" secondAttribute="top" constant="100" id="2hG-6T-taV"/>
+                            <constraint firstItem="06L-NH-ccF" firstAttribute="centerX" secondItem="gmn-sK-8p8" secondAttribute="centerX" id="DJn-8F-0Pg"/>
+                            <constraint firstItem="qf2-cf-GZR" firstAttribute="centerX" secondItem="Ji1-9R-yRO" secondAttribute="centerX" id="Idh-J2-oc5"/>
+                            <constraint firstItem="Ji1-9R-yRO" firstAttribute="centerX" secondItem="06L-NH-ccF" secondAttribute="centerX" id="L0T-CL-cAf"/>
+                            <constraint firstItem="qf2-cf-GZR" firstAttribute="top" secondItem="Ji1-9R-yRO" secondAttribute="bottom" constant="30" id="Yad-ZD-4Qq"/>
+                            <constraint firstItem="Ji1-9R-yRO" firstAttribute="top" secondItem="06L-NH-ccF" secondAttribute="bottom" constant="30" id="xDz-bo-eAO"/>
+                            <constraint firstItem="Dc4-Ex-LeQ" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="qf2-cf-GZR" secondAttribute="bottom" constant="100" id="zMf-nu-cFC"/>
+                        </constraints>
                     </view>
+                    <size key="freeformSize" width="393" height="500"/>
+                    <connections>
+                        <outlet property="category" destination="Ji1-9R-yRO" id="OQi-QO-v50"/>
+                        <outlet property="name" destination="06L-NH-ccF" id="jlK-1k-gbM"/>
+                        <outlet property="price" destination="qf2-cf-GZR" id="Tca-mQ-lm5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UAf-8H-lFp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1721" y="-2"/>
+            <point key="canvasLocation" x="1622" y="81"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="rLo-fO-AY1">
@@ -168,6 +214,9 @@
     </scenes>
     <resources>
         <image name="plus.app.fill" catalog="system" width="128" height="114"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

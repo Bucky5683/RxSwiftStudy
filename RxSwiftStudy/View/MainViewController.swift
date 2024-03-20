@@ -61,6 +61,17 @@ class MainViewController: UIViewController, UITableViewDelegate {
             })
             .disposed(by: disposeBag)
         
+        self.tableView.rx.itemSelected
+            .subscribe(onNext: { [weak self] indexPath in
+                guard let cell = self?.tableView.cellForRow(at: indexPath) as? TableItemViewCell else {
+                    return
+                }
+                
+                
+                self?.presentVC(name: cell.title.text ?? "", price: Int(cell.price.text ?? "0") ?? 0, category: cell.category.text ?? "")
+            })
+            .disposed(by: disposeBag)
+        
         self.editButtonItem.rx.tap
             .subscribe(onNext: { [weak self] in
                 self?.toggleEditMode()
@@ -90,6 +101,20 @@ class MainViewController: UIViewController, UITableViewDelegate {
             }
         )
     }
+    
+    private func presentVC(name: String, price: Int, category: String) {
+        guard let viewController =
+                self.storyboard?.instantiateViewController(withIdentifier: "DetailViewController") as? DetailViewController else {
+            return
+        }
+
+        viewController.modalPresentationStyle = .automatic
+        viewController.nameText = name
+        viewController.priceText = price
+        viewController.categoryText = category
+        self.present(viewController, animated: true)
+    }
+    
     private func toggleEditMode() {
         let toggleEditMode = !tableView.isEditing
         self.tableView.setEditing(toggleEditMode, animated: true)
