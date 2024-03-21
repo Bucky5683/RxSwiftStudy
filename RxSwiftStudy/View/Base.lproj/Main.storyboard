@@ -21,7 +21,7 @@
                                 <rect key="frame" x="0.0" y="113" width="393" height="635"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <button key="tableFooterView" hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="ksK-T5-rpS">
-                                    <rect key="frame" x="0.0" y="119.33333206176758" width="393" height="44"/>
+                                    <rect key="frame" x="0.0" y="118.66666793823242" width="393" height="44"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <state key="normal" title="Button"/>
                                     <buttonConfiguration key="configuration" style="tinted" image="plus.app.fill" catalog="system"/>
@@ -31,23 +31,23 @@
                                 </button>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TableItemViewCell" id="RDP-N0-bYJ" customClass="TableItemViewCell" customModule="RxSwiftStudy" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="50" width="393" height="41.333332061767578"/>
+                                        <rect key="frame" x="0.0" y="50" width="393" height="40.666667938232422"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="RDP-N0-bYJ" id="1Ux-ZR-rLK">
-                                            <rect key="frame" x="0.0" y="0.0" width="393" height="41.333332061767578"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="40.666667938232422"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3B9-fm-phI">
-                                                    <rect key="frame" x="0.0" y="0.0" width="393" height="41.333333333333336"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="393" height="40.666666666666664"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VQV-ez-F3V">
-                                                            <rect key="frame" x="321.66666666666669" y="9.9999999999999982" width="41.333333333333314" height="21.333333333333329"/>
+                                                            <rect key="frame" x="321.66666666666669" y="10.000000000000002" width="41.333333333333314" height="20.666666666666671"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nej-0u-mIL">
-                                                            <rect key="frame" x="30.000000000000004" y="9.9999999999999982" width="41.333333333333343" height="21.333333333333329"/>
+                                                            <rect key="frame" x="30.000000000000004" y="10.000000000000002" width="41.333333333333343" height="20.666666666666671"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
